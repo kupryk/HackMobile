@@ -3,19 +3,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "HackMobile",
+    name: "HackMobileCore",
     platforms: [
         .macOS(.v10_13),
     ],
     products: [
         .library(
-            name: "HackMobile",
-            targets: ["HackMobile"]
+            name: "HackMobileCore",
+            targets: ["HackMobileCore"]
         ),
     ],
     dependencies: [],
     targets: [
-        .target(name: "HackMobile", dependencies: [
+        .target(name: "HackMobileCore", dependencies: [
             "libimobiledevice.c",
             "AnyCodable",
         ]),
