@@ -1,0 +1,4 @@
+module AppleMobileDeviceRestore {
+    umbrella "/Users/kupryk/Desktop/AppleMobileDevice/Sources/AppleMobileDeviceRestore/include"
+    export *
+}

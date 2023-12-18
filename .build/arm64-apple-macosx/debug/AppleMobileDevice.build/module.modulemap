@@ -1,0 +1,4 @@
+module AppleMobileDevice {
+    header "/Users/kupryk/Desktop/AppleMobileDevice/.build/arm64-apple-macosx/debug/AppleMobileDevice.build/AppleMobileDevice-Swift.h"
+    requires objc
+}

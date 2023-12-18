@@ -1,0 +1,26 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "applemobiledevice",
+          "kind" : "root",
+          "location" : "/Users/kupryk/Desktop/AppleMobileDevice",
+          "name" : "AppleMobileDevice"
+        },
+        "path" : "/Users/kupryk/Desktop/AppleMobileDevice/.build/artifacts/applemobiledevice/libimobiledevice.c/libimobiledevice.xcframework",
+        "source" : {
+          "checksum" : "20ccc9f317e1e4b7186a3c6bf6b21683f9d09948223aba7f8467640835b733b4",
+          "type" : "remote",
+          "url" : "https://api.github.com/repos/kupryk/AppleMobileDevice/releases/assets/135943976.zip"
+        },
+        "targetName" : "libimobiledevice.c"
+      }
+    ],
+    "dependencies" : [
+
+    ]
+  },
+  "version" : 6
+}

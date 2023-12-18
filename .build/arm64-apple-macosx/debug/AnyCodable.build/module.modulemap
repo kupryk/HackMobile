@@ -1,0 +1,4 @@
+module AnyCodable {
+    header "/Users/kupryk/Desktop/AppleMobileDevice/.build/arm64-apple-macosx/debug/AnyCodable.build/AnyCodable-Swift.h"
+    requires objc
+}
