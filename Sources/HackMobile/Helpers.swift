@@ -5,7 +5,7 @@
 
 import AnyCodable
 import Foundation
-import libAppleMobileDevice
+import HackMobileCore
 
 public typealias AnyCodableDictionary = [String: AnyCodable]
 

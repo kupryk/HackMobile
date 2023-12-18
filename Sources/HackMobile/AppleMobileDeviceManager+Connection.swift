@@ -4,7 +4,7 @@
 
 
 import Foundation
-import libAppleMobileDevice
+import HackMobileCore
 
 public extension AppleMobileDeviceManager {
     
