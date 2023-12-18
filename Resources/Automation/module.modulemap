@@ -1,4 +1,4 @@
-module HackMobileCore {
+module HackMobile {
     header "libimobiledevice/installation_proxy.h"
     header "libimobiledevice/companion_proxy.h"
     header "libimobiledevice/notification_proxy.h"

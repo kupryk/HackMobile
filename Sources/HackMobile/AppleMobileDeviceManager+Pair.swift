@@ -5,7 +5,7 @@
 
 import AnyCodable
 import Foundation
-import HackMobileCore
+import HackMobile
 
 public extension AppleMobileDeviceManager {
     
