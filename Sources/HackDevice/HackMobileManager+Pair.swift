@@ -1,13 +1,13 @@
 //
-//  AppleMobileDeviceManager+Pair.swift
+//  HackDeviceManager+Pair.swift
+//  Mikita Kupryk (c) 2023
 //
-
 
 import AnyCodable
 import Foundation
 import HackMobile
 
-extension HackMobileManager {
+extension HackDeviceManager {
     
     class PairRecord: CodableRecord {
         public var deviceCertificate: Data? { valueFor("DeviceCertificate") }

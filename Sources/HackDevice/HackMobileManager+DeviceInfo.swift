@@ -1,5 +1,6 @@
 //
-//  AppleMobileDeviceManager+DeviceInfo.swift
+//  HackDeviceManager+DeviceInfo.swift
+//  Mikita Kupryk (c) 2023
 //
 
 
@@ -7,7 +8,7 @@ import AnyCodable
 import Foundation
 import HackMobile
 
-extension HackMobileManager {
+extension HackDeviceManager {
     
     func listDeviceIdentifiers() -> [String] {
         var deviceIdentifier = Set<String>()

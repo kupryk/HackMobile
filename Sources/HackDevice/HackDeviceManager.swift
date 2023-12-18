@@ -1,18 +1,19 @@
 //
-//  AppleMobileDeviceManager.swift
+//  HackDeviceManager.swift
+//  Mikita Kupryk (c) 2023
 //
 
 
 import AnyCodable
 import Foundation
 
-final class HackMobileManager {
+final class HackDeviceManager {
     
     struct Configuration {
         var connectionMethod: ConnectionMethod = .usbPreferred
     }
     
-    static let shared = HackMobileManager()
+    static let shared = HackDeviceManager()
     static var configuration: Configuration = .init()
     
     private init() {}

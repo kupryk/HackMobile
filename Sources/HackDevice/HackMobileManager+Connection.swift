@@ -1,12 +1,13 @@
 //
-//  AppleMobileDeviceManager+Connection.swift
+//  HackDeviceManager+Connection.swift
+//  Mikita Kupryk (c) 2023
 //
 
 
 import Foundation
 import HackMobile
 
-extension HackMobileManager {
+extension HackDeviceManager {
     
     enum ConnectionMethod: String {
         case usb

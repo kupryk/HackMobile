@@ -1,7 +1,7 @@
 //
 //  Helpers.swift
+//  Mikita Kupryk (c) 2023
 //
-
 
 import AnyCodable
 import Foundation

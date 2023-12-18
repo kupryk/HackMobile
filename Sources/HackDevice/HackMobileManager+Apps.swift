@@ -1,5 +1,6 @@
 //
-//  AppleMobileDeviceManager+Apps.swift
+//  HackDeviceManager+Apps.swift
+//  Mikita Kupryk (c) 2023
 //
 
 
@@ -7,7 +8,7 @@ import AnyCodable
 import Foundation
 import HackMobile
 
-extension HackMobileManager {
+extension HackDeviceManager {
     
     func listApplications(device: idevice_t) -> AnyCodableDictionary? {
         var applicationDic: AnyCodableDictionary = [:]
