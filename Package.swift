@@ -15,15 +15,8 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(name: "HackDevice", dependencies: [
-            "libimobiledevice.c",
-            "AnyCodable",
-        ]),
-        .target(name: "AnyCodable"),
-        .binaryTarget(
-            name: "libimobiledevice.c",
-            path: "Resources/Automation/libimobiledevice.xcframework"
-        ),
+        .target(name: "HackDevice", dependencies: ["libimobiledevice.c"]),
+        .binaryTarget(name: "libimobiledevice.c", path: "Resources/Automation/libimobiledevice.xcframework"),
     ]
 )
 

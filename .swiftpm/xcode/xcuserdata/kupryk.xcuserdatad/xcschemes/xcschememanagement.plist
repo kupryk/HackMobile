@@ -37,6 +37,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>HackDevice</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>HackMobile</key>
 		<dict>
 			<key>primary</key>
