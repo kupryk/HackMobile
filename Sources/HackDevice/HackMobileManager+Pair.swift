@@ -7,7 +7,7 @@ import AnyCodable
 import Foundation
 import HackMobile
 
-extension HackDeviceManager {
+public extension HackDeviceManager {
     
     class PairRecord: CodableRecord {
         public var deviceCertificate: Data? { valueFor("DeviceCertificate") }

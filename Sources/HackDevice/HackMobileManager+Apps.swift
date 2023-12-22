@@ -8,7 +8,7 @@ import AnyCodable
 import Foundation
 import HackMobile
 
-extension HackDeviceManager {
+public extension HackDeviceManager {
     
     func listApplications(device: idevice_t) -> AnyCodableDictionary? {
         var applicationDic: AnyCodableDictionary = [:]

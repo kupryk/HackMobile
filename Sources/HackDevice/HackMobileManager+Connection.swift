@@ -7,7 +7,7 @@
 import Foundation
 import HackMobile
 
-extension HackDeviceManager {
+public extension HackDeviceManager {
     
     enum ConnectionMethod: String {
         case usb

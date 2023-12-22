@@ -7,19 +7,19 @@
 import AnyCodable
 import Foundation
 
-final class HackDeviceManager {
+public class HackDeviceManager {
     
-    struct Configuration {
-        var connectionMethod: ConnectionMethod = .usbPreferred
+    public struct Configuration {
+        public var connectionMethod: ConnectionMethod = .usbPreferred
     }
     
-    static let shared = HackDeviceManager()
-    static var configuration: Configuration = .init()
+    static public let shared = HackDeviceManager()
+    static public var configuration: Configuration = .init()
     
     private init() {}
 
-    class CodableRecord: Codable, Equatable, Hashable, Identifiable {
-        var id: UUID = .init()
+    public class CodableRecord: Codable, Equatable, Hashable, Identifiable {
+        public var id: UUID = .init()
         internal(set) var store: AnyCodable
         
         var plistData: Data? {
@@ -56,12 +56,12 @@ final class HackDeviceManager {
             return (store.value as? [String: Any])?[key] as? T
         }
 
-        func hash(into hasher: inout Hasher) {
+        public func hash(into hasher: inout Hasher) {
             hasher.combine(id)
             hasher.combine(store)
         }
 
-        static func == (lhs: CodableRecord, rhs: CodableRecord) -> Bool {
+        static public func == (lhs: CodableRecord, rhs: CodableRecord) -> Bool {
             return lhs.store == rhs.store
         }
     }
