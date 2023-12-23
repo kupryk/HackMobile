@@ -8,8 +8,8 @@
 import Foundation
 
 public extension Notification.Name {
-    static let DevicePaired = Notification.Name("iDevicePaired")
-    static let DeviceChanged = Notification.Name("iDeviceChanged")
-    static let DeviceConnected = Notification.Name("iDeviceConntected")
-    static let DeviceDisconnected = Notification.Name("iDeviceDisconntected")
+    static let devicePaired = Notification.Name("hack-device-paired")
+    static let deviceChanged = Notification.Name("hack-device-changed")
+    static let deviceConnected = Notification.Name("hack-device-connected")
+    static let deviceDisconnected = Notification.Name("hack-device-disconnected")
 }

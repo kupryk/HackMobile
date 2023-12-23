@@ -1,13 +1,13 @@
 //
-//  File.swift
-//  
+//  DeviceDisplayable.swift
+//
 //
 //  Created by Mikita Kupryk on 23/12/2023.
 //
 
 import Foundation
 
-public protocol Device: CustomStringConvertible {
+public protocol DeviceDisplayable: CustomStringConvertible {
     var udid: String { get }
     var name: String { get }
     var version: String? { get }
@@ -16,14 +16,14 @@ public protocol Device: CustomStringConvertible {
     var productName: String? { get }
     var connectionType: ConnectionType { get }
 
-    static var availableDevices: [Device] { get }
+    static var availableDevices: [DeviceDisplayable] { get }
     static var isGeneratingDeviceNotifications: Bool { get }
 
     @discardableResult static func startGeneratingDeviceNotifications() -> Bool
     @discardableResult static func stopGeneratingDeviceNotifications() -> Bool
 }
 
-public extension Device {
+public extension DeviceDisplayable {
     
     var majorVersion: Int? {
         guard let components = self.version?.split(separator: "."), !components.isEmpty else {
