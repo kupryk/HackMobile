@@ -10,13 +10,30 @@ let package = Package(
     products: [
         .library(
             name: "HackDevice",
-            targets: ["HackDevice"]
+            targets: ["RitchieDevice", "HackDevice"]
         ),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(
+            url: "https://github.com/kupryk/HackLogger.git",
+            from: "0.0.1"
+        ),
+    ],
     targets: [
-        .target(name: "HackDevice", dependencies: ["libimobiledevice.c"]),
-        .binaryTarget(name: "libimobiledevice.c", path: "Resources/Automation/libimobiledevice.xcframework"),
+        .binaryTarget(
+            name: "libimobiledevice.c",
+            path: "Resources/Automation/libimobiledevice.xcframework"
+        ),
+        .target(
+            name: "RitchieDevice",
+            dependencies: ["HackLogger", "libimobiledevice.c"],
+            path: "Sources/RitchieDevice"
+        ),
+        .target(
+            name: "HackDevice",
+            dependencies: ["RitchieDevice"],
+            path: "Sources/HackDevice"
+        ),
     ]
 )
 

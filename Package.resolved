@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "HackLogger",
+        "repositoryURL": "https://github.com/kupryk/HackLogger.git",
+        "state": {
+          "branch": null,
+          "revision": "403870a957be626256098792490659ccaf919cd6",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,4 +1,4 @@
-module HackMobile {
+module HackDevice {
     header "libimobiledevice/installation_proxy.h"
     header "libimobiledevice/companion_proxy.h"
     header "libimobiledevice/notification_proxy.h"
@@ -37,6 +37,8 @@ module HackMobile {
     header "libimobiledevice-glue/collection.h"
     header "libimobiledevice-glue/socket.h"
     header "libimobiledevice-glue/tlv.h"
+    
+    header "ritchie_device.h"
 
     export *
 }
